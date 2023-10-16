@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://127.0.0.1:5500/my%20portfolio.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>tamanna's Portfolio</title>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</head>
+
+<body>
+  <h1>tamanna's portfolio</h1>
+  <h2>I'm a Web Developer</h2>
+  <hr>
+  <h2><a href="http://127.0.0.1:5500/4.3%20HTML%20Porfolio%20Project/assets/images/movie-ranking.png">movie ranking project </a></h2>
+  <h3>the  best movie accorting to tamanna</h3>
+  <h2>top 3 movies of all-time</h2> 
+  <hr>
+  <h3>spirited away</h3>
+  <p>tis is my favourite anime.</p>
+  <h3>Ex machinma</h3>
+  <p>reallu cool sci-fi movie.</p>
+  <br>
+  <br>
+  <h1><a href="http://127.0.0.1:5500/3.4%20Birthday%20Invite%20Project/solution.html">birthday invite project.</a></h1>
+  <img src="./tamanna&#39;s Portfolio_files/src.html.png">
+</body></html>
